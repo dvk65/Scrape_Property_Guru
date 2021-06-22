@@ -11,7 +11,7 @@ from selenium.webdriver.common.keys import Keys
 
 chrome_options = Options()
 chrome_options.binary_location = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-driver=webdriver.Chrome(executable_path='chromedriver.exe')
+driver=webdriver.Chrome(options=chrome_options,executable_path='chromedriver.exe')
 
 url="https://www.propertiesguru.com/residential-search/2bhk-residential_apartment_flat-for-sale-in-new_delhi" 
 driver.get(url)
